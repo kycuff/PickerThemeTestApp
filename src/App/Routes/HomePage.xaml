@@ -2,7 +2,6 @@
 <ContentPage x:Class="App.Routes.HomePage"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:inputs="clr-namespace:App.Controls.Inputs"
              xmlns:resx="clr-namespace:App.Resources.Languages;assembly=App"
              Title="{resx:Translate PageTitleHome}"
              BackgroundColor="{DynamicResource PrimaryBackgroundColour}"
@@ -13,6 +12,8 @@
                 IsToggled="False"
                 OnColor="{DynamicResource AccentColour}"
                 Toggled="Switch_Toggled" />
-        <inputs:Picker Title="Picker" Margin="{StaticResource FormMargins}" />
+        <Picker Title="Test Picker" TextColor="{DynamicResource TextSilverColour}"/>
+        <DatePicker TextColor="{DynamicResource TextSilverColour}"/>
+        <TimePicker TextColor="{DynamicResource TextSilverColour}"/>
     </VerticalStackLayout>
 </ContentPage>
